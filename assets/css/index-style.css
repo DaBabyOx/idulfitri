@@ -13,21 +13,21 @@ main {
 }
 
 .card {
-    width: 85%;
-    margin: 15%;
-    padding: 20px;
+    margin: 80% 30%;
+    padding: 3%;
     background-color: white;
     border-radius: 50px;
     box-shadow: 13px 15px black;
-    max-width: 800px;
-    max-height: 1600px;
-    position: relative;
     z-index: 1;
-    overflow-y: hidden;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin: 40% 10%;
+    }
 }
 
 header {
-    width: 100%;
     text-align: center;
     padding: 20px;
     color: white;

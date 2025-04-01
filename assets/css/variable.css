@@ -49,12 +49,6 @@
     --text-xl: 1.5rem;
     --text-xxl: 2rem;
     --text-xxxl: 3rem;
-
-    /* Breakpoints */
-    --mobile: 480px;
-    --tablet: 768px;
-    --laptop: 1024px;
-    --desktop: 1200px;
 }
 
 *,
