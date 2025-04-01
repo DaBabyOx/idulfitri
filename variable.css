@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    /* Base colors */
+    --green-50: #F1F9EF;
+    /* Lightest - background */
+    --green-100: #E5F5E0;
+    /* Very light - background alternative */
+    --green-200: #C7E9C0;
+    /* Light */
+    --green-300: #A1D99B;
+    /* Medium light - primary */
+    --green-400: #74C476;
+    /* Medium */
+    --green-500: #41AB5D;
+    /* Medium dark */
+    --green-600: #31A354;
+    /* Dark - secondary */
+    --green-700: #238B45;
+    /* Darker */
+    --green-800: #006D2C;
+    /* Very dark */
+    --green-900: #00441B;
+    /* Darkest */
+
+    /* Text colors */
+    --text-light: #FFFFFF;
+    --text-dark: #1E3A29;
+    --text-muted: #54755F;
+
+    /* Accent colors for variety */
+    --accent-blue: #4393C3;
+    --accent-yellow: #FEE391;
+    --accent-orange: #FE9929;
+
+    /* Spacing */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-xxl: 3rem;
+
+    /* Font sizes */
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-md: 1rem;
+    --text-lg: 1.25rem;
+    --text-xl: 1.5rem;
+    --text-xxl: 2rem;
+    --text-xxxl: 3rem;
+
+    /* Breakpoints */
+    --mobile: 480px;
+    --tablet: 768px;
+    --laptop: 1024px;
+    --desktop: 1200px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-dark);
+    font-family: 'Quicksand', serif;
+}
+
+p {
+    font-family: 'Quicksand', serif;
+    color: var(--text-dark);
+}
+
+a {
+    color: var(--green-700);
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--green-200);
+    color: var(--text-dark);
+}

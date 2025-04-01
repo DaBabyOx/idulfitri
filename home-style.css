@@ -1,0 +1,50 @@
+body {
+    background-image: url(assets/masjid.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 200vh;
+}
+
+main {
+    padding: 30px;
+}
+
+.social-buttom {
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: var(--green-50);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.social-buttom:hover {
+    background-color: #87af89;
+    transform: translateY(-2px);
+}
+
+.social-buttom:active {
+    background-color: #004085;
+    transform: translateY(0);
+}
+
+.social-buttom:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.social-buttom>svg {
+    width: 30px;
+    height: 30px;
+}
+
+.svg-icon path {
+    fill: black;
+    transition: fill 0.3s ease-in-out;
+}
+
+.social-buttom:hover .svg-icon path {
+    fill: white;
+}

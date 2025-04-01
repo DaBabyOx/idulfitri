@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <link href='/variable.css' rel='stylesheet'>
+    <link href='/index-style.css' rel='stylesheet'>
+    <script src="assets/particles.min.js"></script>
+</head>
+
+<body>
+    <div id="particleContainer"></div>
+
+    <main>
+        <section class="card">
+            <header>
+                <h1>Privacy Policy</h1>
+                <img src="assets/ilhamNegro.png" alt="Privacy Policy Iamge Figure">
+                <p><em>Last Updated a day after lebaran.</em></p>
+            </header>
+
+            <article>
+                <h2>Effective Date: 3/31/2025</h2>
+                <p>Welcome to Lebaran 2025 web, where we collect data responsibly, occasionally laugh at analytics, and
+                    promise not to sell your secrets (unless...).</p>
+
+                <h2>1. Do we share your ip?</h2>
+                <p>Hopefully no :D</p>
+
+                <h2>2. Your Rights</h2>
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Spam Ilham through his insta <a
+                            href="https://www.instagram.com/_ilhamsr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">here</a>
+                    </li>
+                    <li>Ask Nopal on a date</li>
+                    <li>Help Ihya to not get NTRed again</li>
+                </ul>
+
+                <h2>3. Creators</h2>
+                <p>The Creators of this silly website:</p>
+                <ol>
+                    <li>2206821916 - Daffa Farras Putra Tarigan</li>
+                    <li>2403033 - Helmi Aryanto</li>
+                    <li>3337220080 - Naufal Maulana</li>
+                </ol>
+            </article>
+
+            <section class="agreement">
+                <div style="
+                    display: flex; 
+                    align-items: center; 
+                    gap: 5px;
+                ">
+                    <input type="checkbox" id="agreementCheckbox">
+                    <label for="agreementCheckbox">I agree to the Privacy Policy</label>
+                </div>
+                <button id="agreementButton" disabled>Continue</button>
+                </div>
+            </section>
+    </main>
+
+    <script>
+        particlesJS("particleContainer", {
+            particles: {
+                number: { value: 150 },
+                color: { value: "#FFD700" },
+                shape: {
+                    type: "star",
+                },
+                size: { value: 10 },
+                opacity: { value: 0.8, random: true },
+                move: {
+                    speed: 1.5,
+                    direction: "none",
+                    random: false,
+                    straight: false
+                },
+                line_linked: {
+                    enable: true,
+                    color: "#FFD700",
+                    opacity: 0.4
+                }
+            },
+            interactivity: {
+                events: {
+                    onhover: { enable: true, mode: "repulse" },
+                    onclick: { enable: true, mode: "push" }
+                }
+            }
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const agreementCheckbox = document.getElementById("agreementCheckbox");
+            const agreementButton = document.getElementById("agreementButton");
+
+            agreementCheckbox.addEventListener("change", function () {
+                if (agreementCheckbox.checked) {
+                    agreementButton.disabled = false;
+                    agreementButton.classList.add("enabled");
+                }
+                else {
+                    agreementButton.disabled = true;
+                    agreementButton.classList.remove("enabled");
+                }
+            })
+
+            agreementButton.addEventListener("click", function () {
+                if (!agreementButton.disabled) {
+                    window.location.href = "home.html";
+                }
+            })
+        })
+    </script>
+
+</body>
+
+</html>
